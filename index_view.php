@@ -13,12 +13,13 @@
         <ul>
             <li><?= $user->name ?></li>
             <li><?= $user->age ?>歳</li>
+            <li><?= $user->gender === 'male' ? '男性' : '女性' ?></li>
             <li><?= $user->drink() ?></li>
         </ul>
         <?php endforeach; ?>
         <?php else: ?>
         <p>ユーザーはまだ一人もいません</p>
         <?php endif; ?>
-        <p><a href="">新規ユーザー登録</a></p>
+        <p><a href="create.php">新規ユーザー登録</a></p>
     </body>
 </html>
